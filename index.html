@@ -65,7 +65,7 @@ body {
 			game.load.image('blueEnemyBullet', 'assets/bullets/blue-enemy-bullet.png');
 			game.load.spritesheet('explosion', 'assets/explode.png', 128, 128);
 			game.load.bitmapFont('spacefont', 'assets/spacefont/spacefont.png', 'assets/spacefont/spacefont.xml');
-			game.load.audio('Sound Shoot Laser (Disparo Laser)', 'Sound Shoot Laser (Disparo Laser).mp3');
+			game.load.audio('Sound', 'Sound.mp3');
 			game.load.audio('song', 'song.mp3');
 			game.load.audio('Boom', 'Boom.mp3');
 
@@ -259,7 +259,7 @@ body {
 			//  Fire bullet
 			//if (player.alive && fireButton.isDown) {
 			if (player.alive && (fireButton.isDown || game.input.activePointer.isDown)) {	
-				Sound Shoot Laser (Disparo Laser) = game.add.audio('Sound Shoot Laser (Disparo Laser)');
+				Sound = game.add.audio('Sound');
 			Destroy.play();
 				fireBullet();
 			}
