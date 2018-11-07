@@ -260,7 +260,7 @@ body {
 			//if (player.alive && fireButton.isDown) {
 			if (player.alive && (fireButton.isDown || game.input.activePointer.isDown)) {	
 				Sound = game.add.audio('Sound');
-			Destroy.play();
+			Sound.play();
 				fireBullet();
 			}
 
